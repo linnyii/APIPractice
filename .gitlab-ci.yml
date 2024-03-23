@@ -1,0 +1,8 @@
+include:
+  - project: 'Xitment/deploytemplate'
+    ref: master
+    file: '/gitlab-templates/Test.gitlab-ci.yml'
+
+unit test:
+  extends: .unit-test
+  image: mcr.microsoft.com/dotnet/sdk:8.0-alpine
